@@ -1,0 +1,43 @@
+name: publish
+# Every 30 min: publish approved posts from schedule.yaml that are due. Times in schedule.yaml are Pacific.
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'publish | check | validate'
+        default: check
+permissions:
+  contents: write
+concurrency:
+  group: publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q -r requirements.txt
+      - name: Run
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+          IG_USER_ID: ${{ vars.IG_USER_ID }}
+          MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}
+        run: |
+          MODE="${{ github.event.inputs.mode || 'publish' }}"
+          case "$MODE" in
+            check) python publish.py --check ;;
+            validate) python publish.py --validate ;;
+            *) python publish.py ;;
+          esac
+      - name: Save state
+        if: always()
+        run: |
+          if ! git diff --quiet state/; then
+            git config user.name everfold-autopost
+            git config user.email actions@users.noreply.github.com
+            git add state/ && git commit -m "state: $(date -u +%FT%TZ)" && git push
+          fi

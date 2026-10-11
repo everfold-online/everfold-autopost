@@ -1,0 +1,163 @@
+# Everfold -> @everfold.online posting schedule. Times are Pacific (America/Vancouver).
+# A post only goes out when approved: true. Mukul approves each week before it is flipped.
+# Once a post is in state/posted.json it is never published again. To reschedule a missed post, give it a new id.
+# Reels: alt_text is kept for the record; the API only accepts alt text on images.
+# Stories are not automated: the API can't add link stickers, and the story images say "tap the link".
+
+posts:
+  - id: 2026-10-12-her-era
+    date: 2026-10-12
+    time: '17:00'
+    type: reel
+    media: [media/2026-10-12-her-era.mp4]
+    approved: false
+    ai_generated: true
+    caption: |-
+      her keys. her tote. her era.
+      A keychain case that unsnaps into a full-size tote. Six colours, any 3 for $64.95.
+      everfold.online (link in bio)
+    hashtags: '#everfold #herera #thatgirl #keychainbag #foldablebag #totebag #texteffect #girlsneedthis'
+    alt_text: >-
+      A fast beat-synced edit. A woman at a café unsnaps a small leather case and unfolds a tote while huge words like
+      "her keys", "unsnap" and "tote" appear behind her. Quick cuts show the tote in green, black, khaki and red, six women
+      holding their totes under "same bag", and the six cases on keyrings, ending on "be the girl with the bag" and everfold.online.
+
+  - id: 2026-10-13-small-print-faq
+    date: 2026-10-13
+    time: '17:00'
+    type: carousel
+    media:
+      - media/2026-10-13-small-print-faq/01.jpg
+      - media/2026-10-13-small-print-faq/02.jpg
+      - media/2026-10-13-small-print-faq/03.jpg
+      - media/2026-10-13-small-print-faq/04.jpg
+      - media/2026-10-13-small-print-faq/05.jpg
+      - media/2026-10-13-small-print-faq/06.jpg
+      - media/2026-10-13-small-print-faq/07.jpg
+      - media/2026-10-13-small-print-faq/08.jpg
+      - media/2026-10-13-small-print-faq/09.jpg
+    approved: false
+    ai_generated: true
+    caption: |-
+      The small print, in big print.
+      No zip. 39 × 28 × 7 cm open, and it runs a little smaller than people expect. 10 × 10 × 5 cm folded. 140 g.
+      Shipping: 1–5 business days to process, 5–11 in transit.
+      We'd rather say it up front.
+
+      Other questions: info@everfold.online
+      everfold.online (link in bio)
+    hashtags: '#everfold #keychainbag #foldablebag #reusabletote #totebag #faq #everydaycarry'
+    alt_text: Nine bold typographic slides answering questions about the Everfold Keychain Tote, one large answer per slide.
+    slide_alt:
+      - 'Cover: "The small print, in big print." Eight honest answers about the Everfold Keychain Tote, with a magnifying glass over the words "no zip".'
+      - 'Does it have a zip? "NO." Open top: things go in quickly and come out quickly. A black tote in a circle photo.'
+      - 'How big is it, open? "39 × 28 × 7 cm". It runs a little smaller than people expect: groceries, gym kit, the impulse buy, yes; a whole weekly shop, no.'
+      - 'And folded? "10 × 10 × 5 cm". A keychain case about the size of your palm that snaps shut and clips to your keys.'
+      - 'How heavy? "140 g". Case, tote and carabiner, all of it. The case is shown clipped to a belt loop.'
+      - 'What is it made of? "Three things." A nylon shell, a coated vegan leather case, gold-tone hardware.'
+      - 'Are all six the same size? "5 of 6." White is a slightly smaller cut; the other five match.'
+      - 'How long is shipping? "1–5 + 5–11". Business days: 1–5 to process, then 5–11 in transit.'
+      - 'Is there a deal? "3 for $64.95". One is $29.95, two are $49.90, three are $64.95, mix colours, plus 10% off for email sign-up. everfold.online, link in bio.'
+
+  - id: 2026-10-14-burrito-replay
+    date: 2026-10-14
+    time: '17:00'
+    type: reel
+    media: [media/2026-10-14-burrito-replay.mp4]
+    approved: false
+    ai_generated: true
+    caption: |-
+      Don't watch her. Watch him.
+
+      A keychain case that unfolds into a full-size tote. Unsnap, drop, two shakes, straps up.
+      Groceries, gym kit, the impulse buy. It folds back to 10 × 10 cm when you're done.
+
+      Open-top nylon · coated vegan leather case · gold-tone hardware · 140 g.
+      Six colours. $29.95, 2 for $49.90, any 3 for $64.95.
+
+      Final score: tote bag 1, burrito 0.
+      everfold.online (link in bio)
+    hashtags: '#everfold #keychainbag #foldablebag #reusabletote #totebag #everydaycarry #instantreplay #funnyreels #edc'
+    alt_text: >-
+      A sports-broadcast parody. A woman unclips a small black leather case from her keys and unfolds it into a full-size
+      black tote; a seated man is so surprised the filling falls out of his burrito, shown in a slow-motion replay. It ends
+      on a scoreboard reading "Tote bag 1, Burrito 0" and everfold.online.
+
+  - id: 2026-10-15-keychain-issue
+    date: 2026-10-15
+    time: '17:00'
+    type: reel
+    media: [media/2026-10-15-keychain-issue.mp4]
+    approved: false
+    ai_generated: true
+    caption: |-
+      the keychain issue: six covers, one tote.
+      It lives on her keys. It unfolds into a full-size tote. Same bag.
+      Six colours · $29.95 · any 3 for $64.95 · everfold.online (link in bio)
+    hashtags: '#everfold #thekeychainissue #coverstar #thatgirl #keychainbag #foldablebag #totebag #fashionmagazine'
+    alt_text: >-
+      An animated magazine. Six covers titled EVERFOLD show women on bright backdrops holding the Everfold case and matching
+      tote, inside pages show hands folding and unfolding the tote, and the back cover reads "shop the issue" with everfold.online.
+
+  - id: 2026-10-16-assembly-instructions
+    date: 2026-10-16
+    time: '17:00'
+    type: carousel
+    media:
+      - media/2026-10-16-assembly-instructions/01.jpg
+      - media/2026-10-16-assembly-instructions/02.jpg
+      - media/2026-10-16-assembly-instructions/03.jpg
+      - media/2026-10-16-assembly-instructions/04.jpg
+      - media/2026-10-16-assembly-instructions/05.jpg
+      - media/2026-10-16-assembly-instructions/06.jpg
+      - media/2026-10-16-assembly-instructions/07.jpg
+      - media/2026-10-16-assembly-instructions/08.jpg
+    approved: false
+    ai_generated: true
+    caption: |-
+      Assembly instructions for the Keychain Tote.
+      Tools required: none. Zips: none.
+
+      1. Hold it by the keys. 2. Unsnap, let it drop. 3. Two shakes, straps up. 4. Shoulder it.
+      Folding back is steps 1–4 in reverse, roughly.
+
+      Fair warning: it runs a little smaller than you might expect. Groceries, gym kit, the impulse buy: yes.
+      everfold.online (link in bio)
+    hashtags: '#everfold #keychainbag #foldablebag #howitworks #totebag #everydaycarry #edc'
+    alt_text: >-
+      One of eight slides styled as a printed instruction manual on grid paper: a parts list, four photographed steps for
+      unfolding the tote from its keychain case, a diagram for folding it back, and a note that it runs smaller than expected.
+
+  - id: 2026-10-17-girl-math
+    date: 2026-10-17
+    time: '17:00'
+    type: reel
+    media: [media/2026-10-17-girl-math.mp4]
+    approved: false
+    ai_generated: true
+    caption: |-
+      girl math: it folds into a keychain, so it's not another bag. it's an accessory.
+      And the 3-pack works out to $21.65 a bag (3 for $64.95, mix colours).
+
+      Full-size open-top tote · 10 × 10 cm folded · 140 g · 6 colours.
+      everfold.online (link in bio)
+    hashtags: '#everfold #girlmath #keychainbag #foldablebag #totebag #themathismathing #bagessentials #everydaycarry'
+    alt_text: >-
+      Top-down video of hands folding a khaki tote into a small tan leather keychain case on a café table while a "girl math"
+      list and a calculator work out $64.95 ÷ 3 = $21.65, ending on a notes-app checklist and everfold.online.
+
+  - id: 2026-10-18-day-clock
+    date: 2026-10-18
+    time: '17:00'
+    type: reel
+    media: [media/2026-10-18-day-clock.mp4]
+    approved: false
+    ai_generated: true
+    caption: |-
+      07:50 → 21:00. A day on the keyring.
+      It hangs there all day. Then, when you need a bag, it's a bag.
+      everfold.online (link in bio)
+    hashtags: '#everfold #dayinmylife #keychainbag #foldablebag #everydaycarry #totebag #motiondesign'
+    alt_text: >-
+      An animated split-flap clock above photo cards showing the Everfold case on keys, on a belt loop, unfolding at a bakery,
+      and the tote on a tram, at a car and on a street, ending at 21:00 with the Everfold logo and everfold.online.
