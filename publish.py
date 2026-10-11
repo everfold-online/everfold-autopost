@@ -164,16 +164,18 @@ def main():
         for e in errors: print('ERROR', e)
         sys.exit('schedule.yaml has errors; nothing published')
 
-    if os.path.exists(os.path.join(ROOT, 'PAUSED')):
-        print('PAUSED file present; not publishing'); return
 
     token = os.environ.get('META_TOKEN')
-    if not token: sys.exit('META_TOKEN is not set')
+    if not token:
+        if os.path.exists(os.path.join(ROOT, 'PAUSED')): print('PAUSED and no META_TOKEN yet; nothing to do'); return
+        sys.exit('META_TOKEN is not set')
     meta = Meta(token, os.environ.get('IG_USER_ID'))
     meta.discover()
     if '--check' in sys.argv:
         print(f'Token OK. Instagram account id {meta.ig} (@{getattr(meta, "username", "?")})'); return
 
+    if os.path.exists(os.path.join(ROOT, 'PAUSED')):
+        print('PAUSED file present; not publishing'); return
     base = os.environ.get('MEDIA_BASE_URL')
     if not base: sys.exit('MEDIA_BASE_URL is not set')
     now = datetime.now(TZ)
